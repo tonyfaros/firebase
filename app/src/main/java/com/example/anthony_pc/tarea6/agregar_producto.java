@@ -137,7 +137,7 @@ public class agregar_producto extends AppCompatActivity {
     public void uplImage(String nom){
         if(filepath != null) {
 
-            StorageReference childRef = storageReference.child(nom+".jpg");
+            StorageReference childRef = storageReference.child(nom);
 
             //uploading the image
             UploadTask uploadTask = childRef.putFile(filepath);

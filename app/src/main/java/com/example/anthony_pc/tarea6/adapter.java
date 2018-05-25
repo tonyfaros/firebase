@@ -69,16 +69,16 @@ public class adapter  extends BaseAdapter{
         DescargaImagen downloadTask = new DescargaImagen();
         try {
             Bitmap result = downloadTask.execute("https://firebasestorage.googleapis.com/v0/b/tarea6-d34b6.appspot.com/o/"+
-                    lista.get(i).getNombre()+".jpg"+"?alt=media&token=eb71b096-c31e-4b8c-95f9-447b6d3fb8ac)").get();
+                    lista.get(i).getNombre()+"?alt=media&token=eb71b096-c31e-4b8c-95f9-447b6d3fb8ac)").get();
             iv_imagen.setImageBitmap(result);
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
         }
-        nombre.setText(lista.get(i).getNombre());
-        precio.setText(String.valueOf(lista.get(i).getPrecio()));
-        descripcion.setText(lista.get(i).getDescripcion());
+        nombre.setText("   "+lista.get(i).getNombre());
+        precio.setText("   "+String.valueOf(lista.get(i).getPrecio()));
+        descripcion.setText("   "+lista.get(i).getDescripcion());
         return v;
     }
 

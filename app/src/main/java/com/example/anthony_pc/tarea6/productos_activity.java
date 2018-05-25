@@ -56,9 +56,8 @@ public class productos_activity extends AppCompatActivity {
             public boolean onItemLongClick(AdapterView<?> parent, View view, int position, long id) {
                 final int idProducto = position;
                 new android.support.v7.app.AlertDialog.Builder(productos_activity.this)
-                        .setIcon(android.R.drawable.ic_dialog_alert)
-                        .setTitle("Está seguro?")
-                        .setMessage("Desea eliminar el producto ?")
+                        .setTitle("Alerta")
+                        .setMessage("Desea eliminar el producto?")
                         .setPositiveButton("Si", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {

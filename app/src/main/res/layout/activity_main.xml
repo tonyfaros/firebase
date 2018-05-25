@@ -47,7 +47,7 @@
             android:text="Ingresar" />
 
         <Button
-            android:id="@+id/registrar"
+            android:id="@+id/registro"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/login"
@@ -55,5 +55,5 @@
             android:layout_toEndOf="@+id/login"
             android:onClick="registrarUser"
             android:text="Registrar" />
-    </RelativeLayout>
+
 </android.support.constraint.ConstraintLayout>
