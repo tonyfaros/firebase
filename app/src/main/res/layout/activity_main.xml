@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anthony_pc.tarea6.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/registrar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <EditText
+            android:id="@+id/user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="139dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/user"
+            android:layout_below="@+id/user"
+            android:layout_marginTop="37dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:password="true"
+            android:text="Name" />
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/pass"
+            android:layout_below="@+id/pass"
+            android:layout_marginTop="82dp"
+            android:onClick="signIn"
+            android:text="Ingresar" />
+
+        <Button
+            android:id="@+id/registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/login"
+            android:layout_marginStart="21dp"
+            android:layout_toEndOf="@+id/login"
+            android:onClick="registrarUser"
+            android:text="Registrar" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

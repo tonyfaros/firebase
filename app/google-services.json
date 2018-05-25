@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "577172473139",
+    "firebase_url": "https://tarea6-d34b6.firebaseio.com",
+    "project_id": "tarea6-d34b6",
+    "storage_bucket": "tarea6-d34b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577172473139:android:e24921c14172e3a2",
+        "android_client_info": {
+          "package_name": "com.example.anthony_pc.tarea6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577172473139-c16l6384ao6pe6tufb6ktpvpalrl5jhf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.anthony_pc.tarea6",
+            "certificate_hash": "f65b3c2f26f31394777a78abd28e069d30222a09"
+          }
+        },
+        {
+          "client_id": "577172473139-ode5t4i6p8gi54rsohc17cn6cr942kgp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCVhnsduZAbV5bX8lCe17PO-FgnRKUTvFs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577172473139-ode5t4i6p8gi54rsohc17cn6cr942kgp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
