@@ -9,9 +9,7 @@
     <RelativeLayout
         android:id="@+id/registrar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="0dp">
+        android:layout_height="match_parent">
 
         <EditText
             android:id="@+id/user"
@@ -56,4 +54,6 @@
             android:onClick="registrarUser"
             android:text="Registrar" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
+
+    </android.support.constraint.ConstraintLayout>

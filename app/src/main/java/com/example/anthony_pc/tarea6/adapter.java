@@ -7,6 +7,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.text.Layout;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -66,7 +67,8 @@ public class adapter  extends BaseAdapter{
         TextView nombre = (TextView) v.findViewById(R.id.nombre);
         TextView precio = (TextView) v.findViewById(R.id.precio);
         TextView descripcion =  (TextView) v.findViewById(R.id.descripcion);
-        DescargaImagen downloadTask = new DescargaImagen();
+        /*DescargaImagen downloadTask = new DescargaImagen();
+
         try {
             Bitmap result = downloadTask.execute("https://firebasestorage.googleapis.com/v0/b/tarea6-d34b6.appspot.com/o/"+
                     lista.get(i).getNombre()+"?alt=media&token=eb71b096-c31e-4b8c-95f9-447b6d3fb8ac)").get();
@@ -75,10 +77,16 @@ public class adapter  extends BaseAdapter{
             e.printStackTrace();
         } catch (ExecutionException e) {
             e.printStackTrace();
-        }
+        }*/
+        Log.e("largo",lista.get(i).getNombre());
+        Log.e("largo",String.valueOf(lista.get(i).getPrecio()));
+        Log.e("largo",lista.get(i).getDescripcion());
+        Log.e("largo",String.valueOf(lista.get(i).getFoto()));
+
         nombre.setText("   "+lista.get(i).getNombre());
         precio.setText("   "+String.valueOf(lista.get(i).getPrecio()));
         descripcion.setText("   "+lista.get(i).getDescripcion());
+        iv_imagen.setImageBitmap(lista.get(i).getFoto());
         return v;
     }
 

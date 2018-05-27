@@ -11,7 +11,7 @@ public class Producto {
     private String id;
     private String nombre;
     private int precio;
-    //private Bitmap foto;
+    private Bitmap foto;
     private String descripcion;
 
     public Producto(String id, String nombre, int precio,  String descripcion) {
@@ -25,6 +25,12 @@ public class Producto {
         this.nombre = nombre;
         this.precio = precio;
         this.descripcion = descripcion;
+    }
+    public Producto(String nombre, int precio,  String descripcion, Bitmap image) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.descripcion = descripcion;
+        this.foto = image;
     }
 
     public String getId() {
@@ -57,5 +63,13 @@ public class Producto {
 
     public void setDescripcion(String descripcion) {
         this.descripcion = descripcion;
+    }
+
+    public Bitmap getFoto() {
+        return foto;
+    }
+
+    public void setFoto(Bitmap foto) {
+        this.foto = foto;
     }
 }

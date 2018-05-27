@@ -1,7 +1,11 @@
 package com.example.anthony_pc.tarea6;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -22,7 +26,14 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+import java.io.IOException;
+import java.io.InputStream;
+import java.lang.reflect.Array;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
+import java.util.concurrent.ExecutionException;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
     public static ArrayList<Producto> listaProductos = new ArrayList<>();
     private FirebaseAuth.AuthStateListener listener;
     DatabaseReference databaseProductos;
+    public static ArrayList<Bitmap> listaImages = new ArrayList<>();
 
     adapter adapter;
 
@@ -187,23 +199,7 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-     /*public FirebaseUser getCurrentUser(){
-         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
-         if (user != null) {
-             // Name, email address, and profile photo Url
-             String name = user.getDisplayName();
-             String email = user.getEmail();
-             Uri photoUrl = user.getPhotoUrl();
-
-             // Check if user's email is verified
-             boolean emailVerified = user.isEmailVerified();
-
-             // The user's ID, unique to the Firebase project. Do NOT use this value to
-             // authenticate with your backend server, if you have one. Use
-             // FirebaseUser.getToken() instead.
-             String uid = user.getUid();
-         }
-         return user;
-     }*/
 
 }
+
+
