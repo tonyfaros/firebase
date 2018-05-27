@@ -38,9 +38,9 @@
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignStart="@+id/pass"
             android:layout_below="@+id/pass"
-            android:layout_marginTop="82dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="57dp"
             android:onClick="signIn"
             android:text="Ingresar" />
 
@@ -52,7 +52,8 @@
             android:layout_marginStart="21dp"
             android:layout_toEndOf="@+id/login"
             android:onClick="registrarUser"
-            android:text="Registrar" />
+            android:text="Registrar"
+            android:visibility="invisible" />
 
 </RelativeLayout>
 
